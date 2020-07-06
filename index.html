@@ -15,7 +15,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container">
 
             <a class="navbar-brand" href="#"><img src="assets/images/Sushi.png" height="30"> Сегун</a>
@@ -44,39 +44,41 @@
     </nav>
 
     <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/images/carousel/slide_1.jpg" class="d-block w-100" alt="...">
+    <section id="home">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/carousel/slide_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/carousel/slide_2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/carousel/slide_3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/carousel/slide_4.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="assets/images/carousel/slide_2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/carousel/slide_3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/images/carousel/slide_4.jpg" class="d-block w-100" alt="...">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
+    </section>
 
     <!-- About -->
-    <div class="container">
+    <div id="about" class="container">
         <div class="row mt-5">
             <div class="col-12">
                 <h2 class="display-4 text-center">Ресторан японской кухни "Сегун"</h2>
@@ -121,7 +123,7 @@
     </div>
 
     <!-- Menu -->
-    <div class="container">
+    <div id="menu" class="container">
         <div class="row mt-5">
             <div class="col-12">
                 <h2 class="display-4 text-center">Меню</h2>
@@ -132,7 +134,7 @@
                 <div class="card shadow">
                     <img src="assets/images/menu/1.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Темпура ролл с лососем</h5>                        
+                        <h5 class="card-title">Темпура ролл с лососем</h5>
                     </div>
                     <div class="border-top d-flex justify-content-between align-items-center p-4">
                         <span class="text-primary">1800тг</span>
@@ -144,7 +146,7 @@
                 <div class="card shadow">
                     <img src="assets/images/menu/2.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Тобико гурме маки</h5>                        
+                        <h5 class="card-title">Тобико гурме маки</h5>
                     </div>
                     <div class="border-top d-flex justify-content-between align-items-center p-4">
                         <span class="text-primary">2000тг</span>
@@ -156,7 +158,7 @@
                 <div class="card shadow">
                     <img src="assets/images/menu/3.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Чикен ролл</h5>                        
+                        <h5 class="card-title">Чикен ролл</h5>
                     </div>
                     <div class="border-top d-flex justify-content-between align-items-center p-4">
                         <span class="text-primary">1800тг</span>
@@ -168,7 +170,7 @@
                 <div class="card shadow">
                     <img src="assets/images/menu/4.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Денвер ролл</h5>                        
+                        <h5 class="card-title">Денвер ролл</h5>
                     </div>
                     <div class="border-top d-flex justify-content-between align-items-center p-4">
                         <span class="text-primary">2200тг</span>
@@ -180,7 +182,7 @@
                 <div class="card shadow">
                     <img src="assets/images/menu/5.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Кайеси Маки</h5>                        
+                        <h5 class="card-title">Кайеси Маки</h5>
                     </div>
                     <div class="border-top d-flex justify-content-between align-items-center p-4">
                         <span class="text-primary">2000тг</span>
@@ -192,7 +194,7 @@
                 <div class="card shadow">
                     <img src="assets/images/menu/6.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Ролл Калифорния</h5>                        
+                        <h5 class="card-title">Ролл Калифорния</h5>
                     </div>
                     <div class="border-top d-flex justify-content-between align-items-center p-4">
                         <span class="text-primary">1500тг</span>
@@ -202,7 +204,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Schedule -->
     <div class="bg-dark py-5 mt-5">
@@ -253,14 +254,48 @@
             </div>
             <div class="col-12 col-md-6 my-4">
                 <p class="lead">
-                Прглашаем вас отведать лучшие блюда японской кухни.<br>
-                Классические суши приготовленные по старинным японским рецептам.
+                    Прглашаем вас отведать лучшие блюда японской кухни.<br>
+                    Классические суши приготовленные по старинным японским рецептам.
                 </p>
                 <h6><span class="text-primary">Каедзи Исики</span>, Шеф повар</h6>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
+    <div id="footer" class="bg-dark text-white">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12">
+                    <h2 class="display-4 text-center">Ресторан японской кухни "Сегун"</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-4 text-center">
+                    <b>Наш адрес</b><br>
+                    г. Астана, пр. Республики 1
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <span class="font-weight-bold">Наши контакты</span><br>
+                    Тел: +7 (701) 201-11-21<br>
+                    Тел: +7 (7172) 01-11-21
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>
+                        Наша страница в <a href="https://www.facebook.com/rustem.bayetov" target="_blank" class="text-white"><img src="assets/images/facebook.png" width="32" alt="" class="icon">facebook</a>
+                    </p>
+                    <p>
+                        Наша страница в <a href="https://www.instagram.com/russ_01kz/" target="_blank" class="text-white"><img src="assets/images/instagram.png" width="32" alt="" class="icon">instagram</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-12 text-center">
+                    Автор разработки Баетов Рустем.
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
